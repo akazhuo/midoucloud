@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "custom-nav-bar": "/components/custom-nav-bar/index",
+    "banner": "/components/banner/banner",
+    "tab-list": "/components/tab-list/index"
+  }
+}

@@ -1,0 +1,12 @@
+<!--components/banner.wxml-->
+<view class="banner" style="height: {{imgHeight}}px;">
+<swiper class="swiper" 	bindchange="swiperChange">
+  <swiper-item class="swiper-item" wx:for="{{ banners }}" wx:key="index">
+    <image class="swiper-img" id="first-img" src="{{item.url}}" mode="widthFix" bindload="loadImg" />
+  </swiper-item>
+</swiper>
+<view class="indicator-dots">
+  <view class="dots {{ current === item.id ? 'active' : '' }}"  wx:for="{{ banners }}" wx:key="index"></view>
+
+</view>
+</view>

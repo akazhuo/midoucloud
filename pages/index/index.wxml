@@ -1,0 +1,134 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <image class="bg-img" src="/images/bg.png" mode="" />
+  <custom-nav-bar title="首页"></custom-nav-bar>
+  <banner></banner>
+  <view class="page-panel">
+    <view class="category-panel">
+      <view class="panel-title">门窗墙柜</view>
+      <view class="category-list">
+        <view class="category-item" wx:for="{{categoryList}}" wx:key="index">
+          <image class="cate-img" src="{{ item.url}}" mode="widthFix" />
+          <view class="title">{{ item.title }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-panel">
+    <view class="entrance">
+      <view class="entrance-item" wx:for="{{ entranceList }}" wx:key="index">
+        <image class="entrance-img" src="{{item.img}}" mode="widthFix"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-panel shops">
+    <view class="panel-header">
+      <view class="panel-title">铝范之家</view>
+      <view class="panel-opt">查看全部</view>
+    </view>
+    <view class="shop-info" style="background-image: url('/images/shop-bg.png')">
+      <view class="info-top">
+        <view class="shop-name">LVFAN铝范五金门店（佛山南海门店）</view>
+        <view class="shop-time">营业时间: 10:00 - 22:00</view>
+      </view>
+      <view class="info-footer">
+        <view class="shop-distance">
+          <image class="locate-img" src="/images/locate.png" mode="widthFix"/>
+          <text>1.3km</text>
+        </view>
+        <view class="navigate">
+          <image class="navigate-img" src="/images/arrow-left.png" mode="widthFix"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-panel recommend">
+    <view class="wrap">
+      <view class="recommend-panel">
+        <view class="recommend-item">
+        <view class="reci-header">
+          <view class="reci-header-title">铝范上新</view>
+          <view class="reci-header-navi">好物上新啦</view>
+        </view>
+        <view class="reci-body">
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/mimasuo.png" mode="heightFix"/>
+            <view class="reci-product-title">铝范智能密码锁铝范智能密码锁</view>
+          </view>
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/mimasuo.png" mode="heightFix"/>
+            <view class="reci-product-title">铝范智能密码锁铝范智能密码锁</view>
+          </view>
+        </view>
+        </view>
+        <view class="recommend-item">
+        <view class="reci-header">
+          <view class="reci-header-title">热销产品</view>
+          <view class="reci-header-navi">热销好物好价</view>
+        </view>
+        <view class="reci-body">
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/menbashou.png" mode="heightFix"/>
+            <view class="reci-product-title">全景门把配件</view>
+          </view>
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/quanjingmimasuo.png" mode="heightFix"/>
+            <view class="reci-product-title">全景门密码锁</view>
+          </view>
+        </view>
+        </view>
+      </view>
+      <view class="recommend-panel">
+        <view class="recommend-item">
+        <view class="reci-header">
+          <view class="reci-header-title">优品清仓</view>
+          <view class="reci-header-navi">更多</view>
+        </view>
+        <view class="reci-body">
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/liaoxingpeijian.png" mode="heightFix"/>
+            <view class="reci-product-title active">门窗料型配件</view>
+          </view>
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/liaoxingpeijian2.png" mode="heightFix"/>
+            <view class="reci-product-title">门窗料型配件</view>
+          </view>
+        </view>
+        </view>
+        <view class="recommend-item">
+        <view class="reci-header">
+          <view class="reci-header-title">工程推荐</view>
+        </view>
+        <view class="reci-body">
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/quanjingmimasuo.png" mode="heightFix"/>
+            <view class="reci-product-title">全景门门锁</view>
+          </view>
+          <view class="reci-product">
+            <image class="reci-product-image" src="/images/quanjingmimasuo.png" mode="heightFix"/>
+            <view class="reci-product-title">全景门滑轨</view>
+          </view>
+        </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <tab-list></tab-list>
+  <view class="page-panel about-us">
+    <view class="panel-title">关于铝范</view>
+    <view class="about-list">
+      <view class="about-item">
+        <image class="ai-img" src="/images/liaojie.png" mode="widthFix"/>
+      </view>
+      <view class="about-item">
+        <image class="ai-img" src="/images/zoujin.png" mode="widthFix"/>
+      </view>
+      <view class="about-item">
+        <image class="ai-img" src="/images/rongyu.png" mode="widthFix"/>
+      </view>
+      <view class="about-item">
+        <image class="ai-img" src="/images/pinpai.png" mode="widthFix"/>
+      </view>
+    </view>
+  </view>
+</scroll-view>

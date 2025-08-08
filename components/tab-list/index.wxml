@@ -1,0 +1,26 @@
+<view class="tab-list">
+  <scroll-view class="tab-bar" scroll-x enable-flex>
+    <view class="tab-item {{ index === current ? 'active' : ''}}" wx:for="{{tabList}}" wx:key="index" data-index="{{index}}" bindtap="tapBar">
+      <view class="ti-title">{{item.name}}</view>
+      <view class="ti-desc">{{item.desc}}</view>
+    </view>
+  </scroll-view>
+  <view class="tab-content">
+    <view class="content-panel">
+    <view class="product-list">
+      <view class="product-item" wx:for="{{productList}}" wx:key="index">
+        <image class="product-img" src="{{item.img}}" mode="heightFix"/>
+        <view class="product-info">
+          <view class="product-name">
+            <text class="product-tag">新品</text>
+            <text class="name-text">{{item.name}}</text>
+          </view>
+          <view class="product-price">
+            <text class="price-content">{{item.price}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>

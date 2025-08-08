@@ -1,0 +1,9 @@
+<view class="custom-nav-bar"
+      style="{{ contentStyle }}">
+  <view class="logo-wrap ">
+    <image class="logo" src="/images/logo.png" mode="widthFix"/>
+  </view>
+  <view class="middle-content">
+    <input type="text" placeholder="搜索产品名称" />
+  </view>
+</view>

@@ -1,0 +1,212 @@
+/**index.wxss**/
+page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.scrollarea {
+  flex: 1;
+  padding-top: 93px;
+  overflow-y: hidden;
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.page-panel {
+  padding-right: 16px;
+  padding-left:  16px;
+  box-sizing: border-box;
+}
+
+.page-panel .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-panel .panel-title {
+  padding: 16rpx;
+  font-size: 38rpx;
+  font-weight: 600;
+}
+
+.category-panel {
+  background-color: #fff;
+  border-radius: 16rpx;
+  width: 100%;
+  margin-top: 24rpx;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.category-list .category-item {
+  padding: 16rpx;
+  box-sizing: border-box;
+}
+
+.category-list .category-item .cate-img {
+  width: 100%;
+}
+
+.category-list .category-item .title {
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.entrance {
+  display: grid;
+  margin-top: 40rpx;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12rpx;
+}
+
+.entrance .entrance-img {
+  width: 100%;
+}
+
+.shops {
+  margin-top: 80rpx;
+}
+
+.shops .shop-info {
+  padding: 20rpx 40rpx;
+  border-radius: 18rpx;
+  color: #fff;
+  background: 0 0/cover no-repeat;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.shops .shop-info .shop-name {
+  font-size: 32rpx;
+}
+
+.shops .shop-info .shop-time {
+  font-size: 28rpx;
+  margin-top: 12rpx;
+}
+
+.shops .shop-info .info-footer {
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+
+.shops .shop-info .shop-distance {
+  display: flex;
+}
+
+.shops .shop-info .shop-distance .locate-img {
+  width: 40rpx;
+}
+
+.shops .shop-info .info-footer .navigate {
+  background: #fff;
+  border-radius: 50%;
+  padding: 12rpx;
+  font-size: 0;
+}
+
+.shops .shop-info .info-footer .navigate-img {
+  width: 30rpx;
+}
+
+.recommend .wrap {
+  margin-top: 40rpx;
+  border-radius: 18rpx;
+  background: linear-gradient(#FCEDED 0%, #fff 10%);
+}
+
+.recommend .recommend-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+}
+
+.recommend .recommend-item {
+  font-size: 24rpx;
+}
+
+.recommend .recommend-item .reci-header {
+  display: flex;
+  gap: 18rpx;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recommend .recommend-item .reci-header .reci-header-title {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.recommend .recommend-item .reci-header .reci-header-navi {
+  padding: 8rpx 22rpx;
+  border-radius: 30rpx;
+  font-size: 20rpx;
+  color: #DB4338;
+  background-color: #FBEAEA;
+  overflow: hidden;
+}
+
+
+.recommend .recommend-item .reci-body {
+  display: grid;
+  margin-top: 22rpx;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.recommend .recommend-item .reci-body .reci-product {
+  padding: 0 12rpx;
+  text-align: center;
+  overflow: hidden;
+}
+
+.recommend .recommend-item .reci-body .reci-product-image {
+  height: 140rpx;
+}
+
+.recommend .recommend-item .reci-body  .reci-product-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recommend .recommend-item .reci-body  .reci-product-title.active {
+  padding: 6rpx 12rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  color: #DB4338;
+  background-color: #FBEAEA;
+}
+
+.recommend .recommend-panel + .recommend-panel {
+  border-top: 1px solid #eee;
+}
+
+.about-us .about-list {
+  display: grid;
+  margin-top: 12rpx;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rpx;
+}
+
+.about-us .about-item .ai-img {
+  width: 100%;
+}

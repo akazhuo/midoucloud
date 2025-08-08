@@ -1,0 +1,86 @@
+.tab-list {
+  margin-top: 60rpx;
+}
+
+.tab-list .tab-bar {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.tab-list .tab-bar .tab-item {
+  flex-shrink: 0;
+  padding: 0 26rpx;
+  text-align: center;
+}
+
+.tab-list .tab-bar .tab-item.active {
+  color: #DB4338;
+}
+
+.tab-list .tab-bar .tab-item .ti-title {
+  font-size: 36rpx;
+  font-weight: 600;
+
+}
+
+.tab-list .tab-bar .tab-item .ti-desc {
+  padding: 4rpx 18rpx;
+  font-size: 22rpx;
+  color: #999;
+  border-radius: 22rpx;
+}
+
+.tab-list .tab-bar .tab-item.active .ti-desc {
+  color: #fff;
+  background-color: #DB4338;
+}
+
+.tab-content .product-list {
+  display: grid;
+  padding: 0 30rpx;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16rpx;
+}
+
+.tab-content .product-list .product-item {
+  text-align: center;
+}
+
+.tab-content .product-list .product-item .product-img {
+  height: 240rpx;
+}
+
+.tab-content .product-list .product-item .product-info {
+  text-align: left;
+}
+
+.tab-content .product-list .product-item .product-tag {
+  padding: 4rpx 8rpx;
+  background-color: #DB4338;
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+
+.tab-content .product-list .product-item .name-text {
+  margin-left: 12rpx;
+  font-size: 28rpx;
+}
+
+.tab-content .product-list .product-item .product-price {
+  color: #DB4338;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.tab-content .product-list .product-item .product-price::before {
+  content: '￥';
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.tab-content .product-list .product-item .product-price::after {
+  content: '/件';
+  font-size: 24rpx;
+  font-weight: 400;
+}
